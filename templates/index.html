@@ -4,6 +4,11 @@
         <link rel="stylesheet" href="{% static 'css/main.min.css'%}">
     </head>
     <body>
-        <div class="m-10 p-10 bg-blue-300 rounded-xl">College Kitchen {{test_var}}</div>
+        <div class="m-10 p-10 bg-blue-300 rounded-xl ">College Kitchen </div>
+        <div class="m-10 p-10 w-10 h-20 bg-blue-300 rounded-xl">
+            {% for veg in vegetable_list %}
+                <div>{{ veg }}</div>
+            {% endfor %}
+        </div>
     </body>
 </html>

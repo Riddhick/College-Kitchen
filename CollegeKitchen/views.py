@@ -18,7 +18,8 @@ database=firebase.database()
 
 
 def index(request):
-    test_var=database.child('Data').child('Vegetable').child('01').get().val()
+    data=database.child('Data').child('Vegetable').get().val()
+    list1=list(data.values())
     return render(request,'index.html',{
-        "test_var":test_var
+        "vegetable_list":list1
     })
