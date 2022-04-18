@@ -424,8 +424,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.static {
+  position: static;
+}
 .m-10 {
   margin: 2.5rem;
+}
+.w-40 {
+  width: 10rem;
 }
 .rounded-xl {
   border-radius: 0.75rem;
@@ -433,6 +439,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-blue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+.bg-yellow-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 .p-10 {
   padding: 2.5rem;

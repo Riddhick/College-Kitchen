@@ -2,12 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'css/main.min.css'%}">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="m-10 p-10 bg-blue-300 rounded-xl ">College Kitchen </div>
-        <div class="m-10 p-10 w-10 h-20 bg-blue-300 rounded-xl">
+        <div class="m-10 p-10 bg-blue-300 rounded-xl text-center">College Kitchen </div>
+        <div class="m-10 p-10 w-40 h-50 bg-yellow-500 rounded-xl">
             {% for veg in vegetable_list %}
-                <div>{{ veg }}</div>
+                <div class="m-2 p-02 w-20 h-10  bg-red-300"><button class="p-1">{{ veg }}</button></div>
             {% endfor %}
         </div>
     </body>
